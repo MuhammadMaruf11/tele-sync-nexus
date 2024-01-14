@@ -1,0 +1,49 @@
+@use "common" as *;
+
+.footerArea {
+    padding: 80px 0;
+}
+
+.footer-logo {
+    display: block;
+    width: 250px;
+}
+
+.footer-description {
+    p {}
+}
+
+.footerWrapper {
+
+
+    .socialLinks {
+        ul {
+            li {}
+        }
+    }
+}
+
+.footerWidget {
+
+
+    .titleText {}
+
+    ul {
+
+
+        li {
+            a {}
+        }
+    }
+}
+
+.copyRightText {
+    span {
+        font-size: 14px;
+
+        a {
+            font-size: 14px;
+            color: $theme-color;
+        }
+    }
+}

@@ -1,0 +1,268 @@
+@use "common" as *;
+
+// login page styles
+
+.login-bg {
+    background: url('../img/bg/login.png');
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #00000080;
+        z-index: -1;
+    }
+
+    .login-form-wrap {
+        background: $theme-color-2;
+        width: 400px;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 0 12px 12px #ffffff40;
+
+        h2 {
+            color: $theme-color;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .form {
+            label {
+                color: #fff;
+            }
+
+            input {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+}
+
+.admin-layout {
+
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
+    height: 100vh;
+    width: 100vw;
+    background: #e4e9f7;
+    color: #000;
+
+
+    /* Navbar Styles */
+    .navbar {
+        background-color: $theme-color-2;
+        color: #fff;
+        transition: all .3s linear;
+    }
+
+    .navbar {
+        border-bottom: 1px solid $theme-color;
+        border-left: 1px solid $theme-color;
+
+        .contact-btn {
+            margin-right: 10px;
+            margin-left: 15px;
+            padding: 0 4px;
+
+            i {
+                color: $theme-color-2;
+            }
+        }
+    }
+
+    /* Sidebar Styles */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        width: 250px;
+        width: 0;
+        height: 100%;
+        background-color: $theme-color-2;
+        transition: all .3s linear;
+        overflow: hidden;
+        border-right: 1px solid $theme-color;
+
+        .admin-logo {
+            height: 62px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid $theme-color;
+
+            a {
+                display: flex;
+                align-items: center;
+                color: #fff;
+                font-size: 35px;
+                text-transform: lowercase;
+                font-weight: 600;
+
+                img {
+                    width: 100px;
+                    margin-right: -16px;
+                }
+            }
+        }
+
+        .sidebar-list {
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 12px;
+
+                li {
+                    margin-bottom: 12px;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 12px;
+                        // background: $theme-color;
+                        padding: 6px 12px;
+                        color: #fff;
+
+                        span {
+                            font-weight: 600;
+                            text-transform: capitalize;
+                        }
+
+
+                        i {
+                            padding: 8px;
+                            background: #fff;
+                            color: $theme-color;
+                            border-radius: 50%;
+                            width: 32px;
+                            height: 32px;
+                            text-align: center;
+                            margin-right: 4px;
+                            box-shadow: 0 0 5px $theme-color-2;
+                        }
+
+                        &:hover,
+                        &:active,
+                        &.active {
+                            background: #fff;
+                            color: $theme-color-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sidebar.open {
+        width: 250px;
+    }
+
+    /* Content Styles */
+
+    .shrinked {
+        margin-left: 250px;
+    }
+
+    .content {
+        display: flex;
+        transition: all .3s linear;
+        padding: 20px 20px 70px;
+
+
+
+        .content-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            // background: $theme-color;
+            background: #fff;
+            padding: 10px 20px;
+
+            h2 {
+                // color: #fff;
+                color: $theme-color-2;
+                margin-bottom: 0;
+                font-size: 28px;
+            }
+        }
+
+        .content-body {
+            padding: 20px;
+            // background: $theme-color-2;
+            background: #fff;
+
+            .table {
+                margin-bottom: 0;
+                box-shadow: none;
+                border-color: $theme-color;
+
+                thead {
+                    th {
+                        background: $theme-color-2;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /* Footer Styles */
+    .footer {
+        background-color: $theme-color-2;
+        color: #fff;
+        padding: 15px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        transition: all .3s linear;
+        border-top: 1px solid $theme-color;
+    }
+
+    /* Styling for Create Plan Page */
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    form {
+        background: #fff;
+        padding: 20px;
+    }
+
+    .input-wrap {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .sidebar {
+            left: -250px;
+        }
+
+        .sidebar.open {
+            left: 0;
+        }
+    }
+}
