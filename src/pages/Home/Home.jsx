@@ -1,6 +1,7 @@
 import Layout from "../Layout/Layout";
 import Banner from "../../components/Banner/Banner";
 import { Link } from "react-router-dom";
+import Services from "../../components/Services/Services";
 
 const Home = () => {
   const h1Title = "Welcome to";
@@ -25,6 +26,7 @@ const Home = () => {
         bannerDescription={bannerDescription}
         buttons={buttons}
       />
+      <Services />
     </Layout>
   );
 };

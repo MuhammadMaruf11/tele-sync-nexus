@@ -1,0 +1,86 @@
+@use "common" as *;
+
+.service-area {
+    padding-top: 80px;
+    position: relative;
+
+    .service-bg {
+        background: linear-gradient(180deg, #f1feff 40%, #ffffff 60%);
+        padding-bottom: 80px;
+    }
+}
+
+.service-wrap {
+    display: block;
+    padding: 40px 40px 25px;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    margin-bottom: 30px;
+    border: 1px solid #E3E8F4;
+    border-radius: 15px;
+    background: #fff;
+    height: 376px;
+
+
+    .service-icon {
+        font-size: 45px;
+        margin-bottom: 40px;
+        height: 75px;
+        width: 75px;
+        border-radius: 10px;
+        color: $theme-color;
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -ms-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s;
+        display: inline-flex;
+        background: #0e59f21a;
+        justify-content: center;
+        align-items: center;
+
+        i {
+            width: 45px;
+            height: 45px;
+        }
+    }
+
+    .service-content {
+        h5 {
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+    }
+
+    .service-btn {
+        i {
+            font-size: 25px;
+            transform: rotate(320deg);
+            margin-top: 5px;
+            color: $theme-color;
+            transition: all .4s;
+        }
+
+    }
+
+    &:hover {
+        box-shadow: 0px 9px 75px #08142c17;
+
+        .service-btn {
+            i {
+                transform: rotate(0deg);
+
+            }
+
+        }
+    }
+
+}

@@ -98,7 +98,7 @@ h6 {
   font-family: $header-fonts;
   color: $heading-color;
   font-weight: $head-fw;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 h1 a,
@@ -392,4 +392,49 @@ label {
 
 .footer-border-bottom {
   border-bottom: 1.5px solid #cbd5e1;
+}
+
+.section-title {
+  margin-bottom: 40px;
+
+  span {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    position: relative;
+    padding-left: 23px;
+    padding-right: 23px;
+    text-transform: uppercase;
+    line-height: 1;
+
+    &::before {
+      content: "";
+      height: 8px;
+      width: 8px;
+      background: $theme-color;
+      top: 0;
+      position: absolute;
+      bottom: 0;
+      margin: auto;
+      left: 0;
+      border-radius: 2px;
+      box-shadow: 0px 3px 11px #0e59f266;
+    }
+
+    &::after {
+      content: "";
+      height: 8px;
+      width: 8px;
+      background: $theme-color;
+      top: 0;
+      position: absolute;
+      bottom: 0;
+      margin: auto;
+      right: 0;
+      border-radius: 2px;
+      box-shadow: 0px 3px 11px #0e59f266;
+
+    }
+  }
 }

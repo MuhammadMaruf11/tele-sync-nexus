@@ -44,9 +44,12 @@
 .header-bottom {
     width: 100%;
 
-    .socialLinks {
+    .header-menu {
         ul {
             li {
+                display: inline-block;
+                margin-right: 12px;
+
                 a {
                     color: $theme-color-2;
                     text-transform: uppercase;
@@ -75,7 +78,7 @@
         }
     }
 
-    .socialLinks {
+    .header-menu {
         ul {
             li {
                 a {
@@ -115,28 +118,26 @@
 
 .mobileNavbar {
 
-    .navLink {
-        .socialLinks {
-            display: block;
+    .header-menu {
+        display: block;
 
-            ul {
+        ul {
 
-                li {
+            li {
+                display: block;
+                font-size: 14px;
+                margin: 0;
+                border-bottom: 1px solid $theme-color-2;
+
+                a {
+                    color: $theme-color;
+                    padding: 12px 20px;
                     display: block;
-                    font-size: 14px;
-                    margin: 0;
-                    border-bottom: 1px solid $theme-color-2;
 
-                    a {
-                        color: $theme-color;
-                        padding: 12px 20px;
-                        display: block;
+                }
 
-                    }
-
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
+                &:last-child {
+                    margin-bottom: 0;
                 }
             }
         }

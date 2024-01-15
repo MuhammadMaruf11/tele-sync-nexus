@@ -31,37 +31,35 @@ const Header = () => {
   if (menuBtn) {
     mobileMenu = (
       <div className="mobileNavbar">
-        <div className="navLink">
-          <div className="socialLinks">
-            <ul>
-              <li>
-                <Link to="/about-us">About Us</Link>
-              </li>
-              <li>
-                <Link to="/digital-marketing">Digital Marketing</Link>
-              </li>
-              <li>
-                <Link to="/a2p-sms">A2P SMS</Link>
-              </li>
-              <li>
-                <Link to="/case-study">Case Study</Link>
-              </li>
-              <li>
-                <Link to="/blog">Blog</Link>
-              </li>
-              <li>
-                <Link to="/contact-us">Contact Us</Link>
-              </li>
-              <li>
-                {" "}
-                {isHeaderFixed ? (
-                  <Link to="/user">Profile</Link>
-                ) : (
-                  <Link to="/user/login/">Login</Link>
-                )}
-              </li>
-            </ul>
-          </div>
+        <div className="header-menu">
+          <ul>
+            <li>
+              <Link to="/about-us">About Us</Link>
+            </li>
+            <li>
+              <Link to="/digital-marketing">Digital Marketing</Link>
+            </li>
+            <li>
+              <Link to="/a2p-sms">A2P SMS</Link>
+            </li>
+            <li>
+              <Link to="/case-study">Case Study</Link>
+            </li>
+            <li>
+              <Link to="/blog">Blog</Link>
+            </li>
+            <li>
+              <Link to="/contact-us">Contact Us</Link>
+            </li>
+            <li>
+              {" "}
+              {isHeaderFixed ? (
+                <Link to="/user">Profile</Link>
+              ) : (
+                <Link to="/user/login/">Login</Link>
+              )}
+            </li>
+          </ul>
         </div>
       </div>
     );
@@ -93,7 +91,7 @@ const Header = () => {
                   </ul>
                 </div>
                 <div className="header-top-mail">
-                  <i class="fa-sharp fa-solid fa-envelope fa-fw"></i> info@telesyncnexus.com
+                  <i className="fa-sharp fa-solid fa-envelope fa-fw"></i> info@telesyncnexus.com
                 </div>
               </div>
             </div>
@@ -111,37 +109,35 @@ const Header = () => {
               </div>
             </div>
             <div className="col-lg-8 d-lg-block d-none text-end">
-              <div className="navLink">
-                <div className="socialLinks">
-                  <ul>
-                    <li>
-                      <Link to="/about-us">About Us</Link>
-                    </li>
-                    <li>
-                      <Link to="/digital-marketing">Digital Marketing</Link>
-                    </li>
-                    <li>
-                      <Link to="/a2p-sms">A2P SMS</Link>
-                    </li>
-                    <li>
-                      <Link to="/case-study">Case Study</Link>
-                    </li>
-                    <li>
-                      <Link to="/blog">Blog</Link>
-                    </li>
-                    <li>
-                      <Link to="/contact-us">Contact Us</Link>
-                    </li>
-                    <li>
-                      {" "}
-                      {isHeaderFixed ? (
-                        <Link to="/user">Profile</Link>
-                      ) : (
-                        <Link to="/user/login/">Login</Link>
-                      )}
-                    </li>
-                  </ul>
-                </div>
+              <div className="header-menu">
+                <ul>
+                  <li>
+                    <Link to="/about-us">About Us</Link>
+                  </li>
+                  <li>
+                    <Link to="/digital-marketing">Digital Marketing</Link>
+                  </li>
+                  <li>
+                    <Link to="/a2p-sms">A2P SMS</Link>
+                  </li>
+                  <li>
+                    <Link to="/case-study">Case Study</Link>
+                  </li>
+                  <li>
+                    <Link to="/blog">Blog</Link>
+                  </li>
+                  <li>
+                    <Link to="/contact-us">Contact Us</Link>
+                  </li>
+                  <li>
+                    {" "}
+                    {isHeaderFixed ? (
+                      <Link to="/user">Profile</Link>
+                    ) : (
+                      <Link to="/user/login/">Login</Link>
+                    )}
+                  </li>
+                </ul>
               </div>
             </div>
             <div className="col-6 d-lg-none d-block text-end">

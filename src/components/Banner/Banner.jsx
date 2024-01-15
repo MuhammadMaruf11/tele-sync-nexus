@@ -12,7 +12,7 @@ import { Zoom, Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 import banner1 from '/img/bg/banner-bg.jpg'
-import banner2 from '/img/bg/dashboard-temporary-img.png'
+import banner2 from '/img/bg/login.webp'
 import banner3 from '/img/bg/login.png'
 
 function Banner({ h1Title, textTheme, bannerDescription, buttons }) {
