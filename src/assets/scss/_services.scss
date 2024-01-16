@@ -5,7 +5,7 @@
     position: relative;
 
     .service-bg {
-        background: linear-gradient(180deg, #f1feff 40%, #ffffff 60%);
+        background: linear-gradient(180deg, #f1feff 50%, #ffffff 75%);
         padding-bottom: 80px;
     }
 }
@@ -38,13 +38,12 @@
         -o-transition: .4s;
         transition: .4s;
         display: inline-flex;
-        background: #0e59f21a;
+        background: #128da21a;
         justify-content: center;
         align-items: center;
 
         i {
-            width: 45px;
-            height: 45px;
+            font-size: 40px;
         }
     }
 
@@ -83,4 +82,12 @@
         }
     }
 
+}
+
+.about-img-wrap {
+    text-align: center;
+
+    img {
+        width: 500px;
+    }
 }

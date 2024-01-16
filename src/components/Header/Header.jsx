@@ -72,7 +72,7 @@ const Header = () => {
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-4">
               <div className="header-time">
-                <span>Mon-Fri: 8:00 AM - 6:30 PM</span>
+                <span>Sat-Wed: 9:00 AM - 7:00 PM</span>
               </div>
             </div>
             <div className="col-lg-8">

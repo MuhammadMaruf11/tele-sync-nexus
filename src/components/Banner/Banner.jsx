@@ -18,7 +18,7 @@ import banner3 from '/img/bg/login.png'
 function Banner({ h1Title, textTheme, bannerDescription, buttons }) {
   return (
     <div className="banner-area">
-      {/* <Swiper
+      <Swiper
         spaceBetween={10}
         centeredSlides={true}
         slidesPerView={1}
@@ -55,7 +55,7 @@ function Banner({ h1Title, textTheme, bannerDescription, buttons }) {
             <img className="w-100" src={banner3} alt="banner" />
           </div>
         </SwiperSlide>
-      </Swiper> */}
+      </Swiper>
     </div>
   );
 }

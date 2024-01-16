@@ -1,7 +1,7 @@
 import React from "react";
 import AdminLayout from "../AdminLayout/AdminLayout";
 // import { Link } from "react-router-dom";
-import TemporaryImg from "/img/bg/dashboard-temporary-img.png";
+import TemporaryImg from "/img/bg/coming-soon.webp";
 
 const AdminDashboard = () => {
   return (
@@ -13,8 +13,10 @@ const AdminDashboard = () => {
           <h6 className="text-theme mb-0">Dashboard</h6>
         </div>
 
-        <div className="text-center">
-          <img src={TemporaryImg} alt="" />
+        <div className="content-body">
+          <div className="dashboard-img">
+            <img src={TemporaryImg} alt="" />
+          </div>
         </div>
       </div>
     </AdminLayout>

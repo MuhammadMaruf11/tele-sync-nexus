@@ -8,26 +8,15 @@ const Footer = () => {
       <div className="footerArea">
         <div className="container pb-40 footer-border-bottom">
           <div className="row">
-            <div className="col-xl-4 col-lg-4 ">
+            <div className="col-xl-3 col-lg-4 ">
               <div className="header-logo mb-3">
-                <Link
-                  className="d-none"
-                  to="https://fbs-tax.com/wp-content/uploads/2020/02/1553262102-api.jpg"
-                >
-                  copyright
-                </Link>
                 <Link to="/">
-                  <img src={Logo} alt="logo" /> Banking
+                  <img src={Logo} alt="logo" />
                 </Link>
               </div>
               <div className="footer-description ms-2 mb-3 pe-5">
                 <p>
-                  Discover the future of banking with API Banking. Seamlessly
-                  integrate our powerful APIs into your financial solutions or
-                  manage your accounts effortlessly through our user-friendly
-                  interface. Experience the convenience, security, and
-                  innovation that API Banking brings to your financial world.
-                  Join us today and unlock a new era of banking possibilities.
+                  An IT consultancy can help you assess your technology needs and develop a technology strategy that aligns with your business
                 </p>
               </div>
               <div className="footerWrapper ms-2">
@@ -57,7 +46,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-2">
+            <div className="col-xl-3 col-lg-2">
               <div className="footerWidget">
                 <h6 className="titleText">useful links</h6>
                 <ul>
@@ -76,7 +65,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-2">
+            <div className="col-xl-3 col-lg-2">
               <div className="footerWidget">
                 <h6 className="titleText">other resources</h6>
                 <ul>

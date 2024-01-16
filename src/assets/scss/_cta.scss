@@ -1,0 +1,19 @@
+@use "common" as *;
+
+.cta-area {
+    position: relative;
+    padding: 120px 0;
+    background: linear-gradient(135deg, $theme-color 35%, #97c9e6 75%);
+}
+
+.cta-content {
+
+    p {
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    h2 {
+        color: #fff;
+    }
+}
