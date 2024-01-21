@@ -15,7 +15,7 @@ import banner1 from '/img/bg/banner-bg.jpg'
 import banner2 from '/img/bg/login.webp'
 import banner3 from '/img/bg/login.png'
 
-function Banner({ h1Title, textTheme, bannerDescription, buttons }) {
+const Banner = ({ h1Title, textTheme, bannerDescription, buttons }) => {
   return (
     <div className="banner-area">
       <Swiper
