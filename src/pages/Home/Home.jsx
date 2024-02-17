@@ -1,8 +1,9 @@
 import Layout from "../Layout/Layout";
 import Banner from "../../components/Banner/Banner";
 import { Link } from "react-router-dom";
-import Services from "../../components/Services/Services";
+import ServicesComp from "../../components/ServicesComp/ServicesComp";
 import CTA from "../../components/CTA/CTA";
+import AboutComp from "../../components/AboutComp/AboutComp";
 
 const Home = () => {
   const h1Title = "Welcome to";
@@ -27,7 +28,8 @@ const Home = () => {
         bannerDescription={bannerDescription}
         buttons={buttons}
       />
-      <Services />
+      <AboutComp />
+      <ServicesComp />
       <CTA />
     </Layout>
   );

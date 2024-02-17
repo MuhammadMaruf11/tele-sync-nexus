@@ -37,16 +37,7 @@ const Header = () => {
               <Link to="/about-us">About Us</Link>
             </li>
             <li>
-              <Link to="/digital-marketing">Digital Marketing</Link>
-            </li>
-            <li>
-              <Link to="/a2p-sms">A2P SMS</Link>
-            </li>
-            <li>
-              <Link to="/case-study">Case Study</Link>
-            </li>
-            <li>
-              <Link to="/blog">Blog</Link>
+              <Link to="/services">Services</Link>
             </li>
             <li>
               <Link to="/contact-us">Contact Us</Link>
@@ -115,16 +106,7 @@ const Header = () => {
                     <Link to="/about-us">About Us</Link>
                   </li>
                   <li>
-                    <Link to="/digital-marketing">Digital Marketing</Link>
-                  </li>
-                  <li>
-                    <Link to="/a2p-sms">A2P SMS</Link>
-                  </li>
-                  <li>
-                    <Link to="/case-study">Case Study</Link>
-                  </li>
-                  <li>
-                    <Link to="/blog">Blog</Link>
+                    <Link to="/services">Services</Link>
                   </li>
                   <li>
                     <Link to="/contact-us">Contact Us</Link>

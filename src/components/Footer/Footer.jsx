@@ -73,10 +73,10 @@ const Footer = () => {
                     <Link to="/">MIT License</Link>
                   </li>
                   <li>
-                    <Link to="/">Terms &amp; Conditions</Link>
+                    <Link to="/terms-condition">Terms &amp; Conditions</Link>
                   </li>
                   <li>
-                    <Link to="/">Privacy Policy</Link>
+                    <Link to="/privacy-policy">Privacy Policy</Link>
                   </li>
                   <li>
                     <Link to="/">Contact Us</Link>
@@ -94,7 +94,7 @@ const Footer = () => {
                   Copyright &copy; {new Date().getFullYear()} and All rights
                   reserved by{" "}
                   <Link target="_blank" to="https://digitaldecoderltd.com/">
-                    Digital Decoder Ltd
+                    <strong> Digital Decoder Ltd</strong>
                   </Link>
                 </span>
               </div>

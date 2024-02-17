@@ -24,6 +24,10 @@ import AdminApikeys from "./pages/Admin/AdminApiKeys/AdminApikeys";
 import CreateAdminApi from "./pages/Admin/AdminApiKeys/CreateAdminApi";
 import UpdateApiKeys from "./pages/Admin/AdminApiKeys/UpdateApiKeys";
 import AboutUs from "./pages/AboutUs/AboutUs";
+import Services from "./pages/Services/Services";
+import TermsNCondition from "./pages/TermsNCondition/TermsNCondition";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
+import ContactUs from "./pages/ContactUs/ContactUs";
 
 function App() {
   return (
@@ -32,8 +36,12 @@ function App() {
         {/* client routes here  */}
         <Route path="*" element={<Error />} />
         <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/terms-condition" element={<TermsNCondition />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
         {/* User routes herer  */}
         <Route path="/user/" element={<UserDashboard />} />

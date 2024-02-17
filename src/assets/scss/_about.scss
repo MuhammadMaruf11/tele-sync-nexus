@@ -1,0 +1,39 @@
+@use "common" as *;
+
+.about-us-area {
+    padding: 0;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        background-image: url(/img/shape/ellipse.png);
+        width: 350px;
+        height: 350px;
+        right: -150px;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: .35;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        background-image: url(/img/shape/ellipse.png);
+        background-repeat: no-repeat;
+        width: 380px;
+        height: 380px;
+        left: 120px;
+        top: 20%;
+        transform: translateY(-50%);
+        opacity: .35;
+    }
+}
+
+.about-img-wrap {
+    text-align: center;
+
+    img {
+        width: 460px;
+    }
+}

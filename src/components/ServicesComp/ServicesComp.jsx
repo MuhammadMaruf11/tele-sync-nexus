@@ -1,8 +1,12 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import { servicesData } from "../../AllData/ServicesData"
 
 
-const Services = () => {
+const ServicesComp = () => {
+    const { pathname } = useLocation();
+
+    const filteredServicesData = pathname === '/' ? servicesData.slice(0, 3) : servicesData;
+
     return (
         <>
             <section className="service-area">
@@ -23,8 +27,8 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="row mb-5">
-                            {servicesData && servicesData?.map((data, index) => {
+                        <div className="row">
+                            {filteredServicesData?.map((data, index) => {
                                 return (
                                     <div key={index} className="col-xl-4">
                                         <Link to={data.url} className="service-wrap">
@@ -33,7 +37,7 @@ const Services = () => {
                                             </div>
                                             <div className="service-content">
                                                 <h5>{data.title}</h5>
-                                                <p>{data.description.charAt(0).toUpperCase() + data.description.slice(1).toLowerCase()}</p>
+                                                <p>{data.description.charAt(0).toUpperCase() + data.description.slice(1, 120).toLowerCase()}...</p>
                                             </div>
                                             <div className="service-btn">
                                                 <i className="fa-solid fa-arrow-right fa-fw"></i>
@@ -43,29 +47,11 @@ const Services = () => {
                                 )
                             })}
                         </div>
-                        <div className="row justify-content-between">
-                            <div className="col-lg-5">
-                                <div className="section-title">
-                                    <span className="mb-3">WELCOME TO OUR COMPANY</span>
-                                    <h2 className="mb-3">We Are Increasing Business Success With Technology</h2>
-                                    <p>
-                                        An IT solution service company may serve clients from various industries such as healthcare, finance, education, and manufacturing. They may work on a project basis, providing services for a specific project or on a long-term basis... Amazing communication. Best trending designing experience Email & Live chat.
-                                    </p>
-                                </div>
-                                <div class="about-button-area">
-                                    <div class="about-button">
-                                        <Link to="" target="_blank" class="btn btn-theme rounded-5 btn-sm px-5 py-3">
-                                            Discover More
-                                        </Link>
-                                    </div>
-                                </div>
+                        {pathname === '/' && <div className="row">
+                            <div className="col-12 text-center mt-4">
+                                <Link className="btn btn-theme text-uppercase px-4 py-2 fw-bold" to='/services'>See More</Link>
                             </div>
-                            <div className="col-lg-6">
-                                <div className="about-img-wrap">
-                                    <img src="/img/about/about.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div>
+                        </div>}
                     </div>
                 </div>
             </section>
@@ -73,4 +59,4 @@ const Services = () => {
     )
 }
 
-export default Services
+export default ServicesComp

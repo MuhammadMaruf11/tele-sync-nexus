@@ -4,6 +4,14 @@
     position: relative;
     padding: 120px 0;
     background: linear-gradient(135deg, $theme-color 35%, #97c9e6 75%);
+
+    .about-button {
+        a {
+            &:hover {
+                border-color: #fff;
+            }
+        }
+    }
 }
 
 .cta-content {
