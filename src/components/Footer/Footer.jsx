@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "/img/NexusAnimRing/NexusAnim.png";
+import Logo from "/img/logo/logo.png";
 
 const Footer = () => {
   return (
@@ -9,17 +9,17 @@ const Footer = () => {
         <div className="container pb-40 footer-border-bottom">
           <div className="row">
             <div className="col-xl-3 col-lg-4 ">
-              <div className="header-logo mb-3">
+              <div className="footer-logo">
                 <Link to="/">
                   <img src={Logo} alt="logo" />
                 </Link>
               </div>
-              <div className="footer-description ms-2 mb-3 pe-5">
+              <div className="footer-description">
                 <p>
                   An IT consultancy can help you assess your technology needs and develop a technology strategy that aligns with your business
                 </p>
               </div>
-              <div className="footerWrapper ms-2">
+              <div className="footerWrapper">
                 <div className="socialLinks">
                   <ul>
                     <li>
@@ -70,7 +70,7 @@ const Footer = () => {
                 <h6 className="titleText">other resources</h6>
                 <ul>
                   <li>
-                    <Link to="/">MIT License</Link>
+                    <Link to="/cookies-policy">Cookies Policy</Link>
                   </li>
                   <li>
                     <Link to="/terms-condition">Terms &amp; Conditions</Link>
@@ -79,7 +79,7 @@ const Footer = () => {
                     <Link to="/privacy-policy">Privacy Policy</Link>
                   </li>
                   <li>
-                    <Link to="/">Contact Us</Link>
+                    <Link to="/contact-us">Contact Us</Link>
                   </li>
                 </ul>
               </div>

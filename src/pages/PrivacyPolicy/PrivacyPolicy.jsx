@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../Layout/Layout'
 import HeroArea from '../../components/HeroArea/HeroArea'
+import PrivacyComp from '../../components/PrivacyComp/PrivacyComp'
 
 const PrivacyPolicy = () => {
     const heroTitle = 'Privacy Policy'
@@ -8,6 +9,7 @@ const PrivacyPolicy = () => {
     return (
         <Layout>
             <HeroArea heroTitle={heroTitle} heroDescription={heroDescription} />
+            <PrivacyComp heroTitle={heroTitle} />
         </Layout>
     )
 }

@@ -50,13 +50,13 @@
     }
 
     .user-sidebar {
-        background: $theme-color-2;
+        background: $theme-color;
 
         ul {
             list-style: none;
 
             li {
-                border-bottom: 2px solid $theme-color;
+                border-bottom: 2px solid $theme-color-2;
 
                 a {
                     color: #fff;
@@ -64,7 +64,7 @@
                     padding: 12px 20px;
 
                     &:hover {
-                        color: $theme-color;
+                        color: $theme-color-2;
                     }
                 }
             }

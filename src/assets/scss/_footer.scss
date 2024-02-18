@@ -8,17 +8,24 @@
 .footer-logo {
     display: block;
     width: 250px;
+    margin-bottom: 15px;
 }
 
 .footer-description {
-    p {}
+    padding-right: 25px;
+    margin-bottom: 15px;
+
 }
 
 .footerWrapper {
 
     .socialLinks {
         ul {
-            li {}
+            li {
+                a {
+                    font-size: 20px;
+                }
+            }
         }
     }
 }
@@ -27,13 +34,17 @@
     max-width: fit-content;
     margin: 0 auto;
 
-    .titleText {}
+    .titleText {
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
 
     ul {
 
 
         li {
-            a {}
+            margin-bottom: 8px;
+
         }
     }
 }

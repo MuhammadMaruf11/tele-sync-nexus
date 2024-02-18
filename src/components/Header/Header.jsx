@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "/img/logo/logo.gif";
+import Logo from "/img/logo/logo.png";
 
 const Header = () => {
   const [isHeaderFixed, setIsHeaderFixed] = useState(false);
@@ -91,7 +91,7 @@ const Header = () => {
       </div>
       <div className={headerClassName}>
         <div className="container">
-          <div className="row align-items-center justify-content-between">
+          <div className="row align-items-center justify-content-between py-3">
             <div className="col-3">
               <div className="header-logo">
                 <Link to="/">

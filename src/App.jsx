@@ -28,6 +28,7 @@ import Services from "./pages/Services/Services";
 import TermsNCondition from "./pages/TermsNCondition/TermsNCondition";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import ContactUs from "./pages/ContactUs/ContactUs";
+import CookiesPolicy from "./pages/CookiesPolicy/CookiesPolicy";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/cookies-policy" element={<CookiesPolicy />} />
         <Route path="/terms-condition" element={<TermsNCondition />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 

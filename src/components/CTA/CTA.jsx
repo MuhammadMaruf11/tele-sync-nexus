@@ -12,9 +12,9 @@ const CTA = () => {
                         </div>
                     </div>
                     <div className="col-xl-6 text-end">
-                        <div class="about-button-area">
-                            <div class="about-button">
-                                <Link to="" class="btn btn-theme rounded-5 btn-sm px-5 py-3">
+                        <div className="about-button-area">
+                            <div className="about-button">
+                                <Link to="" className="btn btn-theme rounded-5 btn-sm px-5 py-3">
                                     Let's Get Started
                                 </Link>
                             </div>

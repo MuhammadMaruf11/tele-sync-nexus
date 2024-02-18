@@ -26,19 +26,19 @@ const Register = () => {
     try {
       console.log(
         "name: " +
-          formData.name +
-          "mobile: " +
-          formData.mobile +
-          "gender: " +
-          formData.gender +
-          "address: " +
-          formData.address +
-          "email: " +
-          formData.email +
-          "birthDate: " +
-          formData.birthDate +
-          "password: " +
-          formData.password
+        formData.name +
+        "mobile: " +
+        formData.mobile +
+        "gender: " +
+        formData.gender +
+        "address: " +
+        formData.address +
+        "email: " +
+        formData.email +
+        "birthDate: " +
+        formData.birthDate +
+        "password: " +
+        formData.password
       );
       setFormData({
         name: "",

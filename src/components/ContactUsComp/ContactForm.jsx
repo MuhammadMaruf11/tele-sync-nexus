@@ -4,32 +4,31 @@ import { useState } from 'react'
 
 const ContactForm = () => {
 
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         message: '',
-    })
+    });
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        // setFormData((prevData) => ({
-        //     ...prevData,
-        //     [name]: value,
-        // }));
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value,
+        }));
     };
 
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            // console.log('name: ' + formData.name,);
-            // console.log('email: ' + formData.email,);
-            // console.log('message: ' + formData.message,);
-            // setFormData({
-            //     name: '',
-            //     email: '',
-            //     message: '',
-            // })
+            console.log('formdata: ' + formData);
+            setFormData({
+                name: '',
+                email: '',
+                message: '',
+            })
         } catch (error) {
             console.error('error', error);
         }
@@ -44,24 +43,31 @@ const ContactForm = () => {
                             <h2>Contact Us</h2>
                             <form onSubmit={handleSubmit}>
                                 <div className="input-group">
-                                    <input type="text"
+                                    <input id="name"
                                         placeholder='Name'
-                                        value={formData?.name}
-                                        name='name'
-                                        onChange={handleInputChange} />
+                                        name="name"
+                                        type="text"
+                                        value={formData?.name || ''}
+                                        onChange={handleInputChange}
+                                        required
+                                    />
                                 </div>
                                 <div className="input-group">
                                     <input type="email"
                                         placeholder='Email'
-                                        value={formData?.email}
                                         name='email'
-                                        onChange={handleInputChange} />
+                                        id="email"
+                                        value={formData?.email || ''}
+                                        onChange={handleInputChange}
+                                        required
+                                    />
                                 </div>
                                 <div className="input-group">
                                     <textarea type="text"
                                         placeholder='Message'
-                                        value={formData?.message}
                                         name='message'
+                                        id="email"
+                                        value={formData?.message || ''}
                                         onChange={handleInputChange}
                                         cols="30"
                                         rows="4"></textarea>

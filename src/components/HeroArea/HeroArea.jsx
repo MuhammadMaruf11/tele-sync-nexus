@@ -1,10 +1,15 @@
 import React from 'react'
 import terms from '/img/bg/terms.webp'
 import privacy from '/img/bg/privacy.webp'
+import cookies from '/img/bg/privacy.webp'
+import contact from '/img/bg/privacy.webp'
 import { useLocation, Link } from 'react-router-dom';
 
 const HeroArea = ({ heroTitle, heroDescription }) => {
     const { pathname } = useLocation();
+    const privacyPolicy = pathname === '/privacy-policy';
+    const cookiesPolicy = pathname === '/cookies-policy';
+    const termsNCondition = pathname === '/terms-condition';
     return (
         <section className='hero-area'>
             <div className="container">
@@ -17,7 +22,7 @@ const HeroArea = ({ heroTitle, heroDescription }) => {
                         </div>
                     </div>
                     <div className="col-md-6 text-center">
-                        <img src={pathname === '/privacy-policy' ? privacy : terms} alt="" />
+                        <img src={privacyPolicy ? privacy : cookiesPolicy ? cookies : termsNCondition ? terms : contact} alt="" />
                     </div>
                 </div>
             </div>
