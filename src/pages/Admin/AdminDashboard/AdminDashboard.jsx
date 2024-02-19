@@ -15,7 +15,7 @@ const AdminDashboard = () => {
 
         <div className="content-body">
           <div className="dashboard-img">
-            <img src={TemporaryImg} alt="" />
+            <img loading="lazy" src={TemporaryImg} alt="" />
           </div>
         </div>
       </div>

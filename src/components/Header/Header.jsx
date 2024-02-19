@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "/img/logo/logo.png";
+import Logo from "/img/logo/logo.webp";
 
 const Header = () => {
   const [isHeaderFixed, setIsHeaderFixed] = useState(false);

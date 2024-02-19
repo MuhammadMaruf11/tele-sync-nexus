@@ -20,7 +20,7 @@ const AdminLogin = () => {
             />
           </div>
           <div className="cta-btn">
-            <button className="" type="submit">
+            <button className="btn btn-theme-2" type="submit">
               Submit
             </button>
           </div>

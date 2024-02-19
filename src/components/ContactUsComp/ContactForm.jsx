@@ -1,5 +1,5 @@
 import React from 'react'
-import contact from '/img/contact/contact.png'
+import contact from '/img/contact/contact.webp'
 import { useState } from 'react'
 
 const ContactForm = () => {

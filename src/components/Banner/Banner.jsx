@@ -45,17 +45,17 @@ const Banner = ({ h1Title, textTheme, bannerDescription, buttons }) => {
             >
               <SwiperSlide>
                 <div className="swiper-zoom-container">
-                  <img className="w-100" src={banner1} alt="banner" />
+                  <img loading="lazy" className="w-100" src={banner1} alt="banner" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="swiper-zoom-container">
-                  <img className="w-100" src={banner2} alt="banner" />
+                  <img loading="lazy" className="w-100" src={banner2} alt="banner" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="swiper-zoom-container">
-                  <img className="w-100" src={banner3} alt="banner" />
+                  <img loading="lazy" className="w-100" src={banner3} alt="banner" />
                 </div>
               </SwiperSlide>
             </Swiper>

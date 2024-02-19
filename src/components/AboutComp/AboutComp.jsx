@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import about from "/img/about/about.png";
+import about from "/img/about/about.webp";
 
 const AboutComp = () => {
 
