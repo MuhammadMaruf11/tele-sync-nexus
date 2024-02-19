@@ -3,21 +3,21 @@ import React from 'react'
 const CookiesComp = ({ heroTitle }) => {
     return (
         <section className='cookies-area'>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-8 text-center">
-                        <div class="faq-section-title">
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-xl-8 text-center">
+                        <div className="faq-section-title">
                             <h2>{heroTitle}</h2>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="terms-wrap">
-                            <div class="terms-title">
+                <div className="row justify-content-center">
+                    <div className="col-lg-8">
+                        <div className="terms-wrap">
+                            <div className="terms-title">
                                 <h2>What Are Cookies</h2>
                             </div>
-                            <div class="terms-description">
+                            <div className="terms-description">
                                 <p>
                                     As is common practice with almost all professional
                                     websites this site uses cookies, which are tiny files that
@@ -31,12 +31,12 @@ const CookiesComp = ({ heroTitle }) => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-8">
-                        <div class="terms-wrap">
-                            <div class="terms-title">
+                    <div className="col-lg-8">
+                        <div className="terms-wrap">
+                            <div className="terms-title">
                                 <h2>How We Use Cookies</h2>
                             </div>
-                            <div class="terms-description">
+                            <div className="terms-description">
                                 <p>
                                     We use cookies for a variety of reasons detailed below.
                                     Unfortunately, in most cases, there are no industry
@@ -49,12 +49,12 @@ const CookiesComp = ({ heroTitle }) => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-8">
-                        <div class="terms-wrap">
-                            <div class="terms-title">
+                    <div className="col-lg-8">
+                        <div className="terms-wrap">
+                            <div className="terms-title">
                                 <h2>Disabling Cookies</h2>
                             </div>
-                            <div class="terms-description">
+                            <div className="terms-description">
                                 <p>
                                     You can prevent the setting of cookies by adjusting the
                                     settings on your browser (see your browser Help for how to
@@ -119,14 +119,6 @@ const CookiesComp = ({ heroTitle }) => {
                                             deleted when you log out however in some cases they
                                             may remain afterward to remember your site preferences
                                             when logged out.
-                                        </p>
-                                    </li>
-                                    <li><p>By Email: info@pickvisa.com</p></li>
-                                    <li>
-                                        <p>
-                                            By visiting this link:
-                                            <a href="mailto:https://pickvisa.com/contacts">
-                                                https://pickvisa.com/contacts</a>
                                         </p>
                                     </li>
                                 </ul>

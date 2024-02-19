@@ -1,8 +1,8 @@
 import React from 'react'
-import terms from '/img/bg/terms.webp'
-import privacy from '/img/bg/privacy.webp'
-import cookies from '/img/bg/privacy.webp'
-import contact from '/img/bg/privacy.webp'
+import terms from '/img/policy/terms.webp'
+import privacy from '/img/policy/privacy.webp'
+import cookies from '/img/policy/cookies.webp'
+import contact from '/img/policy/privacy.webp'
 import { useLocation, Link } from 'react-router-dom';
 
 const HeroArea = ({ heroTitle, heroDescription }) => {

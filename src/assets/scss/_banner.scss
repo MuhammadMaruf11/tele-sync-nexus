@@ -44,7 +44,36 @@
 
 .hero-area {
     padding: 150px 0 100px;
-    // background: #D9E8F0;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        background-image: url('/public/img/bg/Background-1.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        rotate: 180deg;
+        opacity: .5;
+        z-index: -1;
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        background-image: url('/public/img/bg/Background-1.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        opacity: .5;
+        z-index: -1;
+    }
 }
 
 .hero-content-wrap {

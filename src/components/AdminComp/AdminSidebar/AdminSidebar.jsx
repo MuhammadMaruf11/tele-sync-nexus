@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import Logo from '/img/NexusAnimRing/NexusAnim.png'
+import Logo from '/img/logo/logo.png'
 
 const AdminSidebar = ({ isOpen }) => {
   const location = useLocation();

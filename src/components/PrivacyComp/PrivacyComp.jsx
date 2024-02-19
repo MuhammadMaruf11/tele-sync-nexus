@@ -3,23 +3,23 @@ import React from 'react'
 const PrivacyComp = ({ heroTitle }) => {
     return (
         <section className='privacy-area'>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-8 text-center">
-                        <div class="faq-section-title">
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-xl-8 text-center">
+                        <div className="faq-section-title">
                             <h2>{heroTitle}</h2>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="terms-wrap">
-                            <div class="terms-title">
+                <div className="row justify-content-center">
+                    <div className="col-lg-8">
+                        <div className="terms-wrap">
+                            <div className="terms-title">
                                 <h2>
                                     What is the legitimate interest in processing the data?
                                 </h2>
                             </div>
-                            <div class="terms-description">
+                            <div className="terms-description">
                                 <p>
                                     The legal basis for processing the data is the performance
                                     of the Terms of Use of the Services, where the data
@@ -33,19 +33,19 @@ const PrivacyComp = ({ heroTitle }) => {
                                     any time without affecting the provision of the Services.
                                     Specifically, Users may withdraw their consent at any time
                                     by contacting us at
-                                    <a href="mailto:info@pickvisa.com">info@pickvisa.com</a>.
+
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-8">
-                        <div class="terms-wrap">
-                            <div class="terms-title">
+                    <div className="col-lg-8">
+                        <div className="terms-wrap">
+                            <div className="terms-title">
                                 <h2>How long will we keep your personal data?</h2>
                             </div>
-                            <div class="terms-description">
+                            <div className="terms-description">
                                 <p>
-                                    PICKVISA will keep the personal data of Users while they
+                                    will keep the personal data of Users while they
                                     remain registered customers or users of the Website and/or
                                     the App, and the personal data will be retained after the
                                     termination of the contractual relationship, duly blocked,
@@ -71,16 +71,16 @@ const PrivacyComp = ({ heroTitle }) => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-8">
-                        <div class="terms-wrap">
-                            <div class="terms-title">
+                    <div className="col-lg-8">
+                        <div className="terms-wrap">
+                            <div className="terms-title">
                                 <h2>
                                     Who will your data be sent to?
                                 </h2>
                             </div>
-                            <div class="terms-description">
+                            <div className="terms-description">
                                 <p>
-                                    PICKVISA may communicate the personal data of Users when
+                                    may communicate the personal data of Users when
                                     so required by law, for defending its legitimate rights
                                     and interests, or when necessary in accordance with the
                                     services contracted by users. They may also be accessed by
