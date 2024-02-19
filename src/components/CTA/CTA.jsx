@@ -14,7 +14,7 @@ const CTA = () => {
                     <div className="col-xl-6 text-end">
                         <div className="about-button-area">
                             <div className="about-button">
-                                <Link to="" className="btn btn-theme rounded-5 btn-sm px-5 py-3">
+                                <Link to="" className="btn btn-theme-2 rounded-5 btn-sm px-5 py-3">
                                     Let's Get Started
                                 </Link>
                             </div>

@@ -80,7 +80,7 @@ const ContactForm = () => {
                     </div>
                     <div className="col-lg-6 text-center">
                         <div className="contact-img">
-                            <img src={contact} alt="contact" />
+                            <img loading="lazy" src={contact} alt="contact" />
                         </div>
                     </div>
                 </div>

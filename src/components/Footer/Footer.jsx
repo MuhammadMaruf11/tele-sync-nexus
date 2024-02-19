@@ -23,22 +23,22 @@ const Footer = () => {
                 <div className="socialLinks">
                   <ul>
                     <li>
-                      <Link to="/">
+                      <Link to="/" aria-label="Twitter">
                         <i className="fab fa-twitter"></i>
                       </Link>
                     </li>
                     <li>
-                      <Link to="/">
+                      <Link to="/" aria-label="Facebook">
                         <i className="fab fa-facebook-square"></i>
                       </Link>
                     </li>
                     <li>
-                      <Link to="/">
+                      <Link to="/" aria-label="Dribbble">
                         <i className="fab fa-dribbble"></i>
                       </Link>
                     </li>
                     <li>
-                      <Link to="/">
+                      <Link to="/" aria-label="GitHub">
                         <i className="fab fa-github"></i>
                       </Link>
                     </li>
@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
             <div className="col-xl-3 col-lg-2">
               <div className="footerWidget">
-                <h6 className="titleText">useful links</h6>
+                <h3 className="titleText">useful links</h3>
                 <ul>
                   <li>
                     <Link to="/">About Us</Link>
@@ -67,7 +67,7 @@ const Footer = () => {
             </div>
             <div className="col-xl-3 col-lg-2">
               <div className="footerWidget">
-                <h6 className="titleText">other resources</h6>
+                <h3 className="titleText">other resources</h3>
                 <ul>
                   <li>
                     <Link to="/cookies-policy">Cookies Policy</Link>

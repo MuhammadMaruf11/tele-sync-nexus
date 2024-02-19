@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom"
 import { servicesData } from "../../AllData/ServicesData"
+import wavyShape from "/img/bg/wavy-shape.svg"
 
 
 const ServicesComp = () => {
@@ -11,7 +12,7 @@ const ServicesComp = () => {
         <>
             <section className="service-area">
                 <div className="service-img-bg">
-                    <img src="/img/bg/wavy-shape.svg" alt="" />
+                    <img loading="lazy" src={wavyShape} alt="shape" />
                 </div>
                 <div className="service-bg">
                     <div className="container">
@@ -36,7 +37,7 @@ const ServicesComp = () => {
                                                 <i className={data.icon}></i>
                                             </div>
                                             <div className="service-content">
-                                                <h5>{data.title}</h5>
+                                                <h3>{data.title}</h3>
                                                 <p>{data.description.charAt(0).toUpperCase() + data.description.slice(1, 120).toLowerCase()}...</p>
                                             </div>
                                             <div className="service-btn">
@@ -49,7 +50,10 @@ const ServicesComp = () => {
                         </div>
                         {pathname === '/' && <div className="row">
                             <div className="col-12 text-center mt-4">
-                                <Link className="btn btn-theme text-uppercase px-4 py-2 fw-bold" to='/services'>See More</Link>
+                                <Link className="btn btn-theme"
+                                    to='/services' aria-label="Explore Our Services">
+                                    Explore Our Services
+                                </Link>
                             </div>
                         </div>}
                     </div>

@@ -68,7 +68,7 @@ const Header = () => {
             </div>
             <div className="col-lg-8">
               <div className="header-top-right">
-                <div className="header-top-nav">
+                {/* <div className="header-top-nav">
                   <ul>
                     <li>
                       <Link to=''>All Services</Link>
@@ -80,7 +80,7 @@ const Header = () => {
                       <Link to=''>News</Link>
                     </li>
                   </ul>
-                </div>
+                </div> */}
                 <div className="header-top-mail">
                   <i className="fa-sharp fa-solid fa-envelope fa-fw"></i> info@telesyncnexus.com
                 </div>
@@ -126,6 +126,7 @@ const Header = () => {
               <button
                 onClick={() => setMenuBtn(!menuBtn)}
                 className="mobileMenuBtn"
+                aria-label="Toggle Menu"
               >
                 <span className="bar1"></span>
                 <span className="bar2"></span>

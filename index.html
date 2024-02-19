@@ -3,12 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.ico" />
-    <meta name="Frontend" content="3rudite" />
+    <meta name="frontend" content="3rudit3" />
+    <meta name="author" content="Digital Decoder Ltd." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Web site created using pnpm create vite"
+    />
+    <link rel="preload" href="/src/main.jsx" as="script" />
     <title>Tele Sync Nexus</title>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/main.jsx" defer></script>
+    <script type="application/ld+json">
+      {
+        "@type": "Person",
+        "name": "Muhammad Maruf",
+        "url": "http://maruf.rf.gd",
+        "jobTitle": "Frontend Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Digital Decoder Ltd."
+        }
+      }
+    </script>
   </body>
 </html>

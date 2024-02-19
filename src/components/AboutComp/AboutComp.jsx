@@ -27,7 +27,7 @@ const AboutComp = () => {
                     </div>
                     <div className="col-lg-6">
                         <div className="about-img-wrap">
-                            <img src={about} alt="" />
+                            <img loading="lazy" src={about} alt="" />
                         </div>
                     </div>
                 </div>

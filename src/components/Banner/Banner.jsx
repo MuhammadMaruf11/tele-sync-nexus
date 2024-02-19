@@ -11,11 +11,11 @@ import 'swiper/css/navigation';
 import { Zoom, Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
-import banner1 from '/img/bg/banner-bg.webp'
-import banner2 from '/img/bg/BGBG2.webp'
-import banner3 from '/img/bg/BG-Buble.webp'
+import banner1 from '/img/bg/slider-1.avif'
+import banner2 from '/img/bg/slider-2.webp'
+import banner3 from '/img/bg/slider-3.avif'
 
-const Banner = ({ h1Title, textTheme, bannerDescription, buttons }) => {
+const Banner = () => {
   return (
     <div className="banner-area ">
       <div className="container">
@@ -45,17 +45,17 @@ const Banner = ({ h1Title, textTheme, bannerDescription, buttons }) => {
             >
               <SwiperSlide>
                 <div className="swiper-zoom-container">
-                  <img loading="lazy" className="w-100" src={banner1} alt="banner" />
+                  <img src={banner1} alt="banner" lazyload width={`100%`} height={600} preload="auto" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="swiper-zoom-container">
-                  <img loading="lazy" className="w-100" src={banner2} alt="banner" />
+                  <img src={banner2} alt="banner" lazyload width={`100%`} height={600} preload="auto" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="swiper-zoom-container">
-                  <img loading="lazy" className="w-100" src={banner3} alt="banner" />
+                  <img src={banner3} alt="banner" lazyload width={`100%`} height={600} preload="auto" />
                 </div>
               </SwiperSlide>
             </Swiper>

@@ -2,7 +2,7 @@
 
 .banner-area {
     position: relative;
-    padding: 150px 0 0;
+    padding: 150px 0 100px;
 
     &::before {
         position: absolute;
@@ -16,6 +16,7 @@
         bottom: 0;
         rotate: 180deg;
         opacity: .5;
+        z-index: -1;
     }
 
     &::after {
@@ -28,7 +29,8 @@
         right: 0;
         left: 0;
         bottom: 0;
-        opacity: .5
+        opacity: .5;
+        z-index: -1;
     }
 }
 
@@ -36,7 +38,6 @@
     .swiper-zoom-container {
         img {
             object-fit: cover;
-            height: 600px;
         }
     }
 }
